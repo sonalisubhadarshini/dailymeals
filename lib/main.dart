@@ -30,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("DailyMeal"),
         ),
         body: Center(
-          child: Text("Navigation Time!"),
+          child: Text("Navigation Time"),
         ),
         );
   }
