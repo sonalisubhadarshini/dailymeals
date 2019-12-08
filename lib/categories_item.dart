@@ -10,9 +10,13 @@ Categoriesitem(this.id, this.title, this.color);
 
 
 void selectCategory(BuildContext ctxt){
-  Navigator.of(ctxt).push(MaterialPageRoute(builder: (_){
-    return CategoryMealsScreen(id, title);
-  }));
+  Navigator.of(ctxt).pushNamed(
+  './category-meals', 
+  arguments: {
+    'id' : id,
+    'title' : title,
+  },
+  );
 }
 
   @override
