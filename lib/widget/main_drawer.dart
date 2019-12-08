@@ -45,7 +45,7 @@ Widget buildListTitle(String title, IconData icon, Function tapHandler){
        Navigator.of(context).pushNamed('/');
      }),
      buildListTitle("Filters", Icons.settings,(){
-       Navigator.of(context).pushNamed(FiltersScreen.routeName);
+       Navigator.of(context).pushReplacementNamed(FiltersScreen.routeName);
      }),
 
     ],
