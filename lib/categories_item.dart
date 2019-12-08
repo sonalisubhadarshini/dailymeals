@@ -11,7 +11,7 @@ Categoriesitem(this.id, this.title, this.color);
 
 void selectCategory(BuildContext ctxt){
   Navigator.of(ctxt).pushNamed(
-  './category-meals', 
+  CategoryMealsScreen.routeName, 
   arguments: {
     'id' : id,
     'title' : title,
