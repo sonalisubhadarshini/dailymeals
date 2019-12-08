@@ -1,3 +1,5 @@
+import './screen/filters_screen.dart';
+
 import './screen/bottom_tap_screen.dart';
 
 import './screen/tabs_screen.dart';
@@ -42,6 +44,7 @@ class MyApp extends StatelessWidget{
         '/': (ctxt) => BottomTabScreen(),
         CategoryMealsScreen.routeName : (ctxt) => CategoryMealsScreen(),
         mealdetailedScreen.routeName : (ctxt) => mealdetailedScreen(),
+        FiltersScreen.routeName : (ctxt) => FiltersScreen(),
       },
 
       onGenerateRoute: (settings){

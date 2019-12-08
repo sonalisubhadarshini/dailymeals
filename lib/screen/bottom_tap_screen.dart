@@ -1,3 +1,4 @@
+import '../widget/main_drawer.dart';
 import 'package:flutter/material.dart';
 
 import './categories_screen.dart';
@@ -33,7 +34,7 @@ void _selectPage(int index){
           title: Text(_pages[_selectedPageIndex]['title']),
        
         ),
-      
+        drawer: MainDrawer(),
         body: _pages[_selectedPageIndex]['page'],
         bottomNavigationBar: BottomNavigationBar(
 
